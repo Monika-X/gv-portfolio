@@ -480,7 +480,7 @@ const AvDotModule = (() => {
 ────────────────────────────────────────────────────────── */
 const HeroEntranceModule = (() => {
   const selectors = [
-    '.hero-availability',
+    '.hero-status-badge',
     '.hero-name',
     '.hero-role',
     '.hero-desc',
