@@ -366,7 +366,7 @@ const TiltModule = (() => {
       if (!window.matchMedia('(hover: hover)').matches) return;
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-      document.querySelectorAll('.aws-card, .bento-item, .contact-card, .wa-quick-card, .timeline-item').forEach((card) => {
+      document.querySelectorAll('.aws-card, .bento-item, .contact-card, .wa-quick-card, .timeline-item, .profile-ecosystem').forEach((card) => {
         card.addEventListener('mousemove', onMove);
         card.addEventListener('mouseleave', () => onLeave(card));
       });
