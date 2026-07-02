@@ -72,9 +72,10 @@
   --max-w: 1200px;
 }
 
-/* Custom Scrollbar - Brutalist style */
+/* Custom Scrollbar - Hidden but still scrollable */
 ::-webkit-scrollbar {
-  width: 12px;
+  display: none;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -698,7 +699,6 @@ button {
 
 .profile-glitch-card:hover .pgc-img-main {
   filter: grayscale(0%) contrast(1.1);
-  animation: glitchMain 0.4s steps(2) 0s 1;
 }
 
 /* Red ghost layer */
