@@ -3011,8 +3011,8 @@ a.contact-card:hover .cc-arrow {
 /* Back to Top */
 .back-to-top {
   position: fixed;
-  bottom: 106px;
-  right: 38px; /* align center with 60px WA button */
+  bottom: 30px;
+  right: 30px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -3034,6 +3034,12 @@ a.contact-card:hover .cc-arrow {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.back-to-top.in-footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .back-to-top:hover {
@@ -3676,7 +3682,7 @@ body::before {
   .back-to-top {
     width: 36px;
     height: 36px;
-    bottom: 80px;
-    right: 24px; /* Center aligned with 44px WA button */
+    bottom: 20px;
+    right: 20px;
   }
 }

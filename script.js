@@ -633,6 +633,7 @@ const BackToTopModule = (() => {
   return {
     init() {
       const btn = document.getElementById('backToTop');
+      const footer = document.querySelector('.footer');
       if (!btn) return;
       
       let ticking = false;
@@ -649,6 +650,19 @@ const BackToTopModule = (() => {
           ticking = true;
         }
       }, { passive: true });
+
+      if (footer) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              btn.classList.add('in-footer');
+            } else {
+              btn.classList.remove('in-footer');
+            }
+          });
+        }, { threshold: 0.05 });
+        observer.observe(footer);
+      }
 
       btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
