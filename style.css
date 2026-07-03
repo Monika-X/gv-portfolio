@@ -1582,8 +1582,9 @@ button {
 .aws-arch-map {
   position: relative;
   width: 100%;
-  height: 600px;
-  margin: var(--sp-2xl) 0;
+  height: 500px;
+  margin-top: var(--sp-xl);
+  margin-bottom: 0;
 }
 
 .arch-svg-lines {
